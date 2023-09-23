@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				background-color:gray;
+				height:100vh;
+			}
+			.game{
+				width:600px;
+				padding:20px;
+				background-color:#fff;
+			}
+			.game img{
+				width:30%;
+				margin-right:15px;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+		<button onclick="test()">click here!</button>
+		<button onclick="color()">dont click here!</button>
+		
+		-->
+		<div class="game">
+			<div class="count">
+				<p class="pCount">Player:</p>
+				<p class="cCount">Computer:</p>
+			</div>
+			<div class="songolt">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Paper_450x450.jpg" onclick="play('paper')">
+                <img src="https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg" onclick="play('rock')">
+                <img src="https://m.media-amazon.com/images/I/71rRpZuppsL.jpg" onclick="play('scissor')">
+			</div>
+			<div class="result">
+				<p class="player">player choice:</p>
+				<p class="computer">Computer choice:</p>
+				<p class="winner">winner:</p>
+			</div>
+			<div class="restart">
+				<p onclick="restart"></p>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
